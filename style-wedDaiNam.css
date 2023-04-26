@@ -1,0 +1,285 @@
+.container{
+    width:1380px;
+    height:500px;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1060px auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.backgorund-head{
+    background-color:blue;
+    height:50px;
+    
+}
+.login{
+    background-color:blue;
+    margin-left:940px;
+    padding-right:4px;
+}
+.login p{
+    background-color:blue;
+    color:white;
+    align-items: center;
+    margin-left:15px;
+    font-size:16px;
+    padding:4px;
+}
+    
+
+.search{
+    margin-top:20px;
+}
+.bia img{
+    width:1334px;
+    height:470px;
+}
+/* menudacap */
+/* Tạo menu đa cấp */
+.root {
+    display: flex;
+    /* Làm mất hiệu ứng chấm tròn. */
+    list-style: none;
+}
+
+.root>li>a {
+    text-decoration: none;
+    color: #eee;
+    line-height: 50px;
+    padding: 15px 10px 10px 10px;
+    width:155px;
+}
+
+.menuDaCap {
+    width: 1286px;
+    background-color: #0257ff;
+    padding-left:50px;
+}
+
+/* Định dạng rê chuột vào */
+.root li a:hover {
+    background-color: rgb(21, 42, 21);
+    transform: ease-in 0, 40s;
+    font-weight: bold;
+}
+.root li{
+    padding-left:45px;
+}
+.submenu {
+    width: 200px;
+    min-height: 80px;
+    /* display nghĩa là kiểu hiện thị kiểu thuộc tính trên wed
+     sử dụng display :none  không hiển thị gì cả (ẩn phần tử trang wed không chiếm bất
+     kỳ phần tử nào cả.*/
+    display: none;
+    /* postition:absolute ; là vị trí tuyệt đôi , đưa ra ngoài phần tử cha 
+      ví như nó sẽ đưa ra khỏi phần tử cha vậy tại một không gian khác. */
+    position: absolute;
+}
+
+.submenu li {
+    list-style: none;
+}
+
+.submenu>li>a {
+    text-transform: none;
+    text-decoration-line: none;
+    color: #0257ff;
+    line-height: 40px;
+    text-align: 16px;
+    border:1px solid #e0d2d2;
+    width:155px;
+}
+
+/* Đi từ gốc vào */
+
+.root>li:hover .submenu {
+    display: block;
+    background-color: white;
+    /* Tốc độ di chuột vào  */
+    transform: ease-in 0.40s;
+}
+
+.submenu>li>a:hover {
+    display: block;
+    background-color: #0257ff;
+    color: #eee;
+    /* Tốc độ di chuột vào  */
+    transform: ease-in 0.40s;
+    border:1px solid #d8caca;
+    width:155px;
+}
+ 
+
+/* end */
+.end-content{
+    display: grid;
+    grid-template-columns: 900px auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    height:1000px;
+}
+.date-time{
+    margin-left:40px;
+}
+
+.end-content{
+    border:1px solid #ccc ;
+}
+.father p{
+    color:#0257ff;
+    background-color:#ccc;
+    padding:10px;
+}
+.father p hr{
+    background-color:blue;
+}
+/* box */
+.child{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding:10px;
+}
+.box1{
+
+}
+/* 
+lấy buổi 8 */
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.location-listing{
+    position:relative;
+}
+.location-image{
+    line-height:0;
+    overflow:hidden;
+
+}
+.location-image img{
+    filter:blur(0px);
+    transition:filter 0.3s ease-in-out;
+    transform:scale(1.7);
+}
+.location-title{
+       /*1 em bằng 100%  */
+    font-size:1.5em;
+    font-weight:bold;
+    text-decoration:none;
+    z-index:1;
+    /* Đẩy phần tử xuống dưới ảnh */
+    position:absolute;
+    opacity:0;
+    transition:opacity .5s;
+    color:black;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background:rbga(red,green,blue,alpha);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.location-listing:hover .location-title{
+    opacity:1;
+}
+.location-listing:hover .location-image img{
+    filter:blur(2px);
+}
+@media(hover:none){
+    .location-title{opacity:1;}
+    .location-image img{filter:blur(2px);}
+}
+/* BOX2 */
+.item {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 20% auto;
+    padding: 10px;
+    column-gap: 20px;
+    border-radius: 20px;
+}
+
+.item .img img {
+    height: 80px;
+    width:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .img {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .content2 .title {
+    font-weight: bold;
+}
+.wedSite p{
+    color:#0257ff;
+}
+.wedSite-img img{
+    height:200px;
+    width:250x;
+}
+/* fedback */
+form{
+    border:1px solid #ccc;
+
+}
+/* footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    font-size: 14px;
+    width: 1165px;
+}
+
+.container-footer {
+    max-width: 900px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+.end-fed-fot{
+    display:grid;
+    grid-template-columns: 500px 400px;
+}
+footer{
+    margin-top:158px;
+    margin-left:5px;
+    width:860px;
+}
